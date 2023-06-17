@@ -1,0 +1,14 @@
+<aside
+  ...attributes
+  class="now-playing"
+>
+  <img class="now-playing-cover" src={{this.player.album.cover}} alt="Cover art for {{this.player.album.name}}">
+  <h2 class="now-playing-name">{{this.player.album.name}}</h2>
+  <button type="button" class="button close" {{on "click" this.player.stop}}>{{svg-jar 'close'}}</button>
+
+  {{#if this.player.isPlaying}}
+    <button class="button" type="button" {{on "click" this.player.pause}}>Pause</button>
+  {{else}}
+    <button class="button" type="button" {{on "click" (fn this.player.play this.player.album.id)}}>Play</button>
+  {{/if}}
+</aside>

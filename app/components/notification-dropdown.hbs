@@ -1,0 +1,31 @@
+<div class="notification-dropdown" ...attributes>
+
+  <button
+    type="button"
+    class="
+      notification-button
+      {{if this.notifications.length 'has-notifications'}}
+    "
+    {{on "click" this.toggle}}
+  >
+    {{svg-jar "notification"
+      title="Notifications"
+    }}
+  </button>
+
+  {{#if this.isOpen}}
+    <div class="dropdown" {{on-click-outside this.close}}>
+      {{#if this.notifications.length}}
+        <button class="button clear-notifications" type="button" {{on "click" this.clear}}>Clear notifications</button>
+      {{/if}}
+      <ul class="dropdown-list">
+        {{#each this.notifications as |notification|}}
+          <li class="dropdown-list-item">{{notification}}</li>
+        {{else}}
+          <li><i>No notifications.</i></li>
+        {{/each}}
+      </ul>
+    </div>
+  {{/if}}
+
+</div>

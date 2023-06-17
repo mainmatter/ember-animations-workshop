@@ -1,0 +1,39 @@
+.now-playing {
+  position: fixed;
+  bottom: 0;
+  left: 30px;
+  height: 451px;
+  width: 302px;
+  border: 1px solid #dadbdc;
+  border-bottom: none;
+  filter: drop-shadow(0 20px 13px rgb(0 0 0 / 3%))
+    drop-shadow(0 8px 5px rgb(0 0 0 / 8%));
+  border-radius: 11px 11px 0 0;
+  background: #fff;
+  display: grid;
+  grid-template-rows: 300px 1fr 1fr;
+}
+
+.now-playing-cover {
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+}
+
+.now-playing-name {
+  font-size: 1.2rem;
+  margin: 15px 0 0;
+  padding: 0 15px;
+}
+
+.now-playing > .button {
+  margin: 15px;
+}
+
+.now-playing > .button.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 100%;
+  padding: 5px;
+}

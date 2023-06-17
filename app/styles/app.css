@@ -1,1 +1,47 @@
 /* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
+
+@import url("./button.css");
+@import url("./index.css");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fafbfc;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.header > h1 {
+  margin-bottom: 0;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 30px 5px;
+}
+
+.card {
+  background: #fff;
+  padding: 30px;
+  border: 1px solid #dadbdc;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
