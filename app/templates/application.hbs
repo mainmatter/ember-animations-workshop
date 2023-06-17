@@ -1,7 +1,14 @@
-{{page-title "EmberAnimationsWorkshop"}}
+{{page-title "Ember Animations Workshop"}}
 
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+<main>
+  <header class="header">
+    <h1>Ember Animations Workshop</h1>
+    <NotificationDropdown />
+  </header>
 
-{{outlet}}
+  {{outlet}}
+
+  {{#if this.player.album}}
+    <NowPlaying />
+  {{/if}}
+</main>

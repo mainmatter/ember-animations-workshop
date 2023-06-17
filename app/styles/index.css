@@ -1,0 +1,8 @@
+.play-now .album-card {
+  grid-template-columns: 125px 1fr;
+  grid-template-rows: min(125px);
+}
+
+.collapse-content .button {
+  margin-bottom: 0;
+}

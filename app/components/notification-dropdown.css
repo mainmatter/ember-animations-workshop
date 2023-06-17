@@ -1,0 +1,67 @@
+.notification-dropdown {
+  position: relative;
+}
+
+.notification-button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.notification-button:hover,
+.notification-button:focus,
+.notification-button:active {
+  background: #dadbdc;
+}
+
+.notification-icon {
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.notification-icon path {
+  transition: all 0.5s;
+}
+
+.notification-button.has-notifications path {
+  stroke: goldenrod;
+  fill: gold;
+}
+
+.button.clear-notifications {
+  display: flex;
+  margin: 15px;
+  margin-left: auto;
+}
+
+.notification-dropdown > .dropdown {
+  position: absolute;
+  z-index: 1;
+  top: calc(100% + 5px);
+  right: 0;
+  width: 300px;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #dadbdc;
+  filter: drop-shadow(0 20px 13px rgb(0 0 0 / 3%))
+    drop-shadow(0 8px 5px rgb(0 0 0 / 8%));
+}
+
+.dropdown-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-list > li {
+  padding: 50px 15px;
+  text-align: center;
+}
+
+li.dropdown-list-item {
+  padding: 10px 15px;
+  border-top: 1px solid #dadbdc;
+  text-align: left;
+}

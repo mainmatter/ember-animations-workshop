@@ -1,0 +1,11 @@
+<section class="album-card" ...attributes>
+  <img class="album-card-cover" src={{@album.cover}} alt="Cover art for {{@album.title}}"/>
+  <div class="album-card-content">
+    <h3 class="album-card-name">{{@album.name}}</h3>
+    <p class="album-card-description">{{@album.description}}</p>
+    {{yield}}
+  </div>
+  <footer>
+    <button class="button" type="button" {{on "click" (fn this.player.play @album.id)}}>Play</button>
+  </footer>
+</section>

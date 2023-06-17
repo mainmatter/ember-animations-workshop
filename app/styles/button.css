@@ -1,0 +1,27 @@
+.button {
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #dadbdc;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #000;
+  background: #fff;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.button:hover {
+  background: #dadbdc;
+}
+
+.button:active {
+  color: #fff;
+  background: #e04e39;
+}
+
+.button:active path {
+  stroke: #fff;
+  fill: #fff;
+}

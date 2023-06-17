@@ -1,0 +1,15 @@
+<div class="collapse" open={{this.isOpen}} ...attributes>
+
+  <div class="collapse-summary" {{on "click" this.toggle}}>
+    {{@title}}
+    <span class="collapse-icon">►</span>
+  </div>
+
+  <div
+    class="collapse-content"
+    {{animate-height isOpen=this.isOpen}}
+  >
+    {{yield}}
+  </div>
+
+</div>
