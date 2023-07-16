@@ -42,7 +42,7 @@
   }
 }
 
-.notification-button.has-notifications svg {
+.notification-button.ringing svg {
   animation: 0.3s infinite linear ring-bell;
   transform-origin: center 10px;
 }

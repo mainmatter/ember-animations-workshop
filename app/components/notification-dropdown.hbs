@@ -5,6 +5,7 @@
     class="
       notification-button
       {{if this.notifications.length 'has-notifications'}}
+      {{if this.ringing 'ringing'}}
     "
     {{on "click" this.toggle}}
   >
