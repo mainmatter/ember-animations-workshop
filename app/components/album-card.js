@@ -9,9 +9,13 @@ export default class AlbumCardComponent extends Component {
   @service player;
 
   *transition({ keptSprites, receivedSprites }) {
-    [...keptSprites, ...receivedSprites].forEach((sprite) => {
-      move(sprite);
-      scale(sprite);
-    });
+    if (
+      window.matchMedia('(prefers-reduced-motion: reduce)')?.matches === false
+    ) {
+      [...keptSprites, ...receivedSprites].forEach((sprite) => {
+        move(sprite);
+        scale(sprite);
+      });
+    }
   }
 }

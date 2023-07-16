@@ -45,3 +45,10 @@ main {
   border-radius: 5px;
   margin-bottom: 30px;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition-duration: 0s !important;
+    animation-duration: 0s !important;
+  }
+}
