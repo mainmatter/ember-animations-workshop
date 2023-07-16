@@ -5,5 +5,7 @@ export default modifier(function animateHeight(
   positional,
   { isOpen = false }
 ) {
-  // TODO: implement solution for exercise #4
+  // short solution
+  let targetHeight = isOpen ? element.scrollHeight : 0;
+  element.style.height = `${targetHeight}px`;
 });

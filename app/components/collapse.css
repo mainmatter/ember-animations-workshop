@@ -23,6 +23,7 @@
   /* closed */
   overflow: hidden;
   height: 0;
+  transition: height 0.5s;
 }
 
 .collapse[open] .collapse-content {
@@ -32,6 +33,10 @@
 
 .collapse[open] > .collapse-summary {
   border-radius: 4px 4px 0 0;
+}
+
+.collapse-icon {
+  transition: transform 0.15s;
 }
 
 .collapse[open] .collapse-icon {
