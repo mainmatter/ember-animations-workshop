@@ -10,6 +10,7 @@
   background: #fff;
   display: inline-block;
   margin-bottom: 15px;
+  transition: all 0.15s;
 }
 
 .button:hover {
