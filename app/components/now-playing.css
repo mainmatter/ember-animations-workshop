@@ -37,3 +37,18 @@
   border-radius: 100%;
   padding: 5px;
 }
+
+.now-playing-enter-active,
+.now-playing-leave-active {
+  transition: bottom 0.5s ease;
+}
+
+.now-playing-enter,
+.now-playing-leave-to {
+  bottom: -451px;
+}
+
+.now-playing-leave,
+.now-playing-enter-to {
+  bottom: 0;
+}

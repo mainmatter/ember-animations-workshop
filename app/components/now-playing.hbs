@@ -1,6 +1,7 @@
 <aside
   ...attributes
   class="now-playing"
+  {{css-transition "now-playing"}}
 >
   <img class="now-playing-cover" src={{this.player.album.cover}} alt="Cover art for {{this.player.album.name}}">
   <h2 class="now-playing-name">{{this.player.album.name}}</h2>
