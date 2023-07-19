@@ -29,5 +29,9 @@ module('Integration | Component | collapse', function (hooks) {
 
     assert.dom('[data-test-collapse]').hasAttribute('open');
     assert.dom('[data-test-collapse-content]').isVisible();
+    assert.strictEqual(
+      getComputedStyle(find('[data-test-collapse-content]')).height,
+      '24px'
+    );
   });
 });
