@@ -1,6 +1,6 @@
-<div class="collapse" open={{this.isOpen}} ...attributes>
+<div class="collapse" open={{this.isOpen}} data-test-collapse ...attributes>
 
-  <div class="collapse-summary" {{on "click" this.toggle}}>
+  <div class="collapse-summary" {{on "click" this.toggle}} data-test-collapse-summary>
     {{@title}}
     <span class="collapse-icon">►</span>
   </div>
@@ -8,6 +8,7 @@
   <div
     class="collapse-content"
     {{animate-height isOpen=this.isOpen}}
+    data-test-collapse-content
   >
     {{yield}}
   </div>

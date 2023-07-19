@@ -4,7 +4,7 @@
   <h2>Play now</h2>
   {{#each @model.playNow as |album|}}
     <AlbumCard @album={{album}}>
-      <LinkTo class="button" @route="album" @model={{album.id}}>Go to album</LinkTo>
+      <LinkTo class="button" @route="album" @model={{album.id}} data-test-album-linkto="{{album.id}}">Go to album</LinkTo>
     </AlbumCard>
   {{/each}}
 </section>

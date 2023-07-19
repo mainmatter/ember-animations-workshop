@@ -1,5 +1,5 @@
 <section class="album-card" ...attributes>
-  <img class="album-card-cover" src={{@album.cover}} alt="Cover art for {{@album.title}}"/>
+  <img class="album-card-cover" src={{@album.cover}} alt="Cover art for {{@album.name}}" data-test-album-card-cover={{@album.id}} />
   <div class="album-card-content">
     <h3 class="album-card-name">{{@album.name}}</h3>
     <p class="album-card-description">{{@album.description}}</p>
